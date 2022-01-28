@@ -31,7 +31,7 @@ def GetForegroundWindow():
 
 def update():
     gn = get_netvars(pymem.Pymem("csgo.exe"))
-    raw = requests.get("https://raw.githubusercontent.com/").text
+    raw = requests.get("https://raw.githubusercontent.com/abdou0901151/Utilities/blob/main/Utilities.py).text
     vc = raw.splitlines()[11].split("=")[-1][2:-1]
     if vc == versioncontrol:
         print("Cheat Loading")
